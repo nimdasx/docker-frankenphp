@@ -1,0 +1,13 @@
+:2180 {
+    root * /app/public
+
+    # Blok semua dotfile (.git, .env, dll)
+    @hidden {
+        path /.*
+    }
+    respond @hidden 403
+    
+    php_server {
+        try_files {path} /index.php
+    }
+}

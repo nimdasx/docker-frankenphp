@@ -1,0 +1,13 @@
+services:
+  frankenphp:
+    image: nimdasx/frankenphp
+    ports:
+      - "2180:2180"
+    volumes:
+      - ./app:/app
+      - ./docker-conf/nimdasx.caddyfile:/etc/frankenphp/Caddyfile.d/nimdasx.caddyfile
+      - ./docker-conf/php-nimdasx.ini:/usr/local/etc/php/conf.d/php-nimdasx.ini
+    restart: unless-stopped
+    # environment:
+      # - SERVER_NAME=SERVER_NAME=:80
+      # - CADDY_GLOBAL_OPTIONS=debug
