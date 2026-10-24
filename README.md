@@ -1,6 +1,7 @@
 # docker frankenphp
 
 ## changelog
+- 24 okt 2026 : php 8.5 phalcon 5.23.0
 - 18 des 2025 : php 8.4 phalcon 5.9.3
 
 ## command

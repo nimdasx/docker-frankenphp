@@ -1,4 +1,4 @@
-FROM dunglas/frankenphp:1-php8.4
+FROM dunglas/frankenphp:1-php8.5
 
 LABEL maintainer="nimdasx@gmail.com"
 LABEL description="frankenphp with additional module like phalcon5"
@@ -17,8 +17,8 @@ RUN install-php-extensions \
 	intl \
 	zip \
 	mysqli \
-	xmlrpc \ 
+	xmlrpc \
 	redis \
 	# sqlsrv \
 	# pdo_sqlsrv \
-	phalcon-5.9.3
+	phalcon-5.23.0
